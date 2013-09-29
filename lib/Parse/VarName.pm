@@ -1,6 +1,6 @@
 package Parse::VarName;
 
-use 5.010;
+use 5.010001;
 use strict;
 use warnings;
 
@@ -68,4 +68,3 @@ sub split_varname_words {
 
 1;
 # ABSTRACT: Routines to parse variable name
-
