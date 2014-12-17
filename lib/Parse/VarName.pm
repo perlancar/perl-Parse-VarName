@@ -1,5 +1,8 @@
 package Parse::VarName;
 
+# DATE
+# VERSION
+
 use 5.010001;
 use strict;
 use warnings;
@@ -7,9 +10,12 @@ use warnings;
 use Exporter::Lite;
 our @EXPORT_OK = qw(split_varname_words);
 
-# VERSION
-
 our %SPEC;
+
+$SPEC{':package'} = {
+    v => 1.1,
+    summary => 'Routines to parse variable name',
+};
 
 # cannot be put inside sub, warning "Variable %s will not stay shared"
 my @res;
@@ -67,4 +73,4 @@ sub split_varname_words {
 }
 
 1;
-# ABSTRACT: Routines to parse variable name
+# ABSTRACT:
