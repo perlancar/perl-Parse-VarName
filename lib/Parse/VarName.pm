@@ -7,7 +7,7 @@ use 5.010001;
 use strict;
 use warnings;
 
-use Exporter::Lite;
+use Exporter qw(import);
 our @EXPORT_OK = qw(split_varname_words);
 
 our %SPEC;
